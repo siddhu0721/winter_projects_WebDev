@@ -1,0 +1,73 @@
+.container{
+    
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    font-size: 3rem;
+}
+
+h1{
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 1em;
+    border-bottom: 2px solid;
+    color: rgb(0, 0, 0)
+}
+
+table{
+    border-radius: 10px;
+    border: 2px solid;
+    display: flex;
+    width: 33rem;
+    height: 42rem;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+tbody{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+tr{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#display{
+    height: 2rem;
+    width: 29rem;
+    background-color: rgba(240, 255, 255, 0.696);
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+#output{
+    height: 3rem;
+    width: 29rem;
+    background-color: azure;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+.number{
+    width:5rem;
+    height:5rem;
+    background-color: rgb(126, 168, 171);
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+}
+
+.button{
+    width:5rem;
+    height:5rem;
+    background-color: rgb(7, 255, 40);
+    border-radius: 5px;
+    font-size: 25px;
+}

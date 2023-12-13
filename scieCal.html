@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scieCal.css">
+
+</head>
+<body>
+    <form action="/action.php" type="post">
+    <div class="container">
+    <h1>SCIENTIFIC CALCULATOR</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td id="out" colspan="5"><input type="text" id="display"></td>
+            </tr>
+            <tr>
+                <td id="out" colspan="5"><input type="text" id="output" value="0"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" value="1" onclick="display.value+='1'"></td>
+                <td><input type="button" class="number" value="2" onclick="display.value+='2'"></td>
+                <td><input type="button" class="number" value="3" onclick="display.value+='3'"></td>
+                <td><input type="button" class="button" value="&#129076" onclick="backspace()"></td>
+                <td><input type="button" class="button" value="C" onclick="output.value='0',display.value=''"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" value="4" onclick="display.value+='4'"></td>
+                <td><input type="button" class="number" value="5" onclick="display.value+='5'"></td>
+                <td><input type="button" class="number" value="6" onclick="display.value+='6'"></td>
+                <td><input type="button" class="button" value="+" onclick="display.value+='+'"></td>
+                <td><input type="button" class="button" value="^" onclick="Pow()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" value="7" onclick="display.value+='7'"></td>
+                <td><input type="button" class="number" value="8" onclick="display.value+='8'"></td>
+                <td><input type="button" class="number" value="9" onclick="display.value+='9'"></td>
+                <td><input type="button" class="button" value="-" onclick="display.value+='-'"></td>
+                <td><input type="button" class="button" value="&radic;" onclick="SquareRoot()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="." onclick="display.value+='.'"></td>
+                <td><input type="button" class="number" value="0" onclick="display.value+='0'"></td>
+                <td><input type="button" class="button" value="=" onclick="calc()"></td>
+                <td><input type="button" class="button" value="&#10799" onclick="display.value+='*'"></td>
+                <td><input type="button" class="button" value="&pi;" onclick="Pi()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="(" onclick="display.value+='('"></td>
+                <td><input type="button" class="button" value=")" onclick="display.value+=')'"></td>
+                <td><input type="button" class="button" value="log(" onclick="LogBase10()"></td>
+                <td><input type="button" class="button" value="%" onclick="display.value+='/'"></td>
+                <td><input type="button" class="button" value="exp(" onclick="Exp()"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </form>
+    <script src="scieCal.js"></script>
+</body>
+</html>
